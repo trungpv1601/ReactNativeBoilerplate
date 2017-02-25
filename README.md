@@ -9,6 +9,7 @@ React Native + Redux
 	react-native init ReactNativeBoilerplate
 	```
 - Install Redux
+
  	```
 	npm install --save react-redux redux
 	```
@@ -41,6 +42,7 @@ React Native + Redux
 	```
 
 - Create folder `/src/reducers` and create `index.js`
+
 	```
 	/// /src/reducers/index.js
 
@@ -52,6 +54,7 @@ React Native + Redux
 	});
    	```
 - Remove all in `index.ios.js`, `index.android.js` and add
+
 	```
 	import {
 	  AppRegistry
