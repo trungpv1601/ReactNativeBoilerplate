@@ -4,6 +4,7 @@ React Native + Redux
 ### 1. Install Step By Step
 	
 - Install React Native ([Getting Started React Native](https://facebook.github.io/react-native/docs/getting-started.html))
+
 	```
 	react-native init ReactNativeBoilerplate
 	```
