@@ -7,56 +7,56 @@ React Native + Redux
 	```
 	react-native init ReactNativeBoilerplate
 	```
- - Install Redux
+- Install Redux
  	```
-    npm install --save react-redux redux
-    ```
- - Create folder `\src` in root folder and create File `App.js`
+	npm install --save react-redux redux
+	```
+- Create folder `\src` in root folder and create File `App.js`
 
 	```
-    /// /src/App.js
-    
-    import React, { Component } from 'react';
-    import { View, Text } from 'react-native';
-    import { Provider } from 'react-redux';
-    import { createStore } from 'redux';
-    import reducers from './reducers';
+	/// /src/App.js
 
-    class App extends Component {
-        render () {
-            return (
-                <Provider store={createStore(reducers)}>
-                    <View>
-                        <Text>
-                            Welcome to React Native + Redux ;)
-                        </Text>
-                    </View>
-                </Provider>
-            );
-        }
-    }
+	import React, { Component } from 'react';
+	import { View, Text } from 'react-native';
+	import { Provider } from 'react-redux';
+	import { createStore } from 'redux';
+	import reducers from './reducers';
 
-    export default App;
-    ```
+	class App extends Component {
+		render () {
+		    return (
+				<Provider store={createStore(reducers)}>
+				    <View>
+					<Text>
+					    Welcome to React Native + Redux ;)
+					</Text>
+				    </View>
+				</Provider>
+			);
+		}
+	}
+
+	export default App;
+	```
 
 - Create folder `/src/reducers` and create `index.js`
 	```
-    /// /src/reducers/index.js
-    
-    import { combineReducers } from 'redux';
+	/// /src/reducers/index.js
 
-    export default combineReducers({
-        // Reducer Here
-        hello: () => []
-    });
-    ```
+	import { combineReducers } from 'redux';
+
+	export default combineReducers({
+		// Reducer Here
+		hello: () => []
+	});
+   	```
 - Remove all in `index.ios.js`, `index.android.js` and add
-  ```
-  import {
-    AppRegistry
-  } from 'react-native';
-  import App from './src/App';
+	```
+	import {
+	  AppRegistry
+	} from 'react-native';
+	import App from './src/App';
 
-  AppRegistry.registerComponent('ReactNativeBoilerplate', () => App);
+	AppRegistry.registerComponent('ReactNativeBoilerplate', () => App);
 
-  ```
+	```
